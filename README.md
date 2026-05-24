@@ -12,64 +12,10 @@
 
 <br>
 
-**Topics**
-
-[![information-retrieval](https://img.shields.io/badge/topic-information--retrieval-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/information-retrieval)
-[![hybrid-search](https://img.shields.io/badge/topic-hybrid--search-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/hybrid-search)
-[![semantic-search](https://img.shields.io/badge/topic-semantic--search-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/semantic-search)
-[![bm25](https://img.shields.io/badge/topic-bm25-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/bm25)
-[![dense-retrieval](https://img.shields.io/badge/topic-dense--retrieval-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/dense-retrieval)
-[![multilingual-nlp](https://img.shields.io/badge/topic-multilingual--nlp-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/multilingual-nlp)
-[![transformers](https://img.shields.io/badge/topic-transformers-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/transformers)
-[![contrastive-learning](https://img.shields.io/badge/topic-contrastive--learning-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/contrastive-learning)
-[![miracl](https://img.shields.io/badge/topic-miracl-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/miracl)
-[![mteb](https://img.shields.io/badge/topic-mteb-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/mteb)
-[![rag](https://img.shields.io/badge/topic-retrieval--augmented--generation-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/retrieval-augmented-generation)
-[![research-code](https://img.shields.io/badge/topic-research--code-2563eb?style=flat-square&logo=github&logoColor=white)](https://github.com/topics/research-code)
-
-<br>
-
 *Implementation of "Query-Adaptive Hybrid Search" (Posokhov et al., 2026)*
 *Machine Learning and Knowledge Extraction*
 
 </div>
-
----
-
-## GitHub About (for discoverability)
-
-Paste this into your repo **About** sidebar (Settings → General, or the ⚙️ on the repo homepage):
-
-| Field | Value |
-|:---|:---|
-| **Description** | Adaptive hybrid retrieval: per-query BM25 + dense fusion via QDAP. PyTorch implementation with antagonist negative sampling on MLDR & MIRACL (29 languages). |
-| **Website** | [Paper (DOI)](https://doi.org/10.3390/make8040091) |
-| **Topics** | See [`.github/TOPICS.txt`](.github/TOPICS.txt) |
-
-**One-command setup** (requires [GitHub CLI](https://cli.github.com/) after `gh auth login`):
-
-```powershell
-# Windows
-.\.github\setup-github-about.ps1
-```
-
-```bash
-# macOS / Linux
-bash .github/setup-github-about.sh
-```
-
-<details>
-<summary><b>All 20 GitHub topics (click to copy)</b></summary>
-
-```
-information-retrieval, hybrid-search, semantic-search, bm25, dense-retrieval,
-neural-information-retrieval, multilingual-nlp, pytorch, transformers,
-contrastive-learning, question-answering, natural-language-processing,
-machine-learning, deep-learning, miracl, mteb, retrieval-augmented-generation,
-search-engine, research-code, make-2026
-```
-
-</details>
 
 ---
 
