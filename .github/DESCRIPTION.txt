@@ -1,0 +1,1 @@
+Adaptive hybrid retrieval: per-query BM25 + dense fusion via QDAP (Query-Driven Alpha Prediction). PyTorch implementation with antagonist negative sampling, evaluated on MLDR & MIRACL (29 languages).
