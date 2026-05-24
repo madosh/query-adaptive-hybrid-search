@@ -1,0 +1,39 @@
+qdap:
+  type: "L"  # "S" for lightweight, "L" for full encoder
+  num_bins: 101
+  conv_kernel: 7
+  model_name: "Alibaba-NLP/gte-multilingual-base"
+
+training:
+  epochs: 5
+  batch_size: 64
+  learning_rate: 1.0e-4
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  max_seq_length: 512
+  gradient_accumulation_steps: 2
+  fp16: true
+
+loss:
+  lambda_weight: 0.62
+  ce_type: "squared"
+
+data:
+  datasets:
+    - mldr
+    - miracl
+  languages: "all"
+  cache_dir: "./data/cache"
+  bm25_index_dir: "./data/bm25_indices"
+  dense_encoder_path: "./checkpoints/dense_encoder/best"
+
+logging:
+  use_wandb: false
+  project: "query-adaptive-hybrid-search"
+  log_every: 50
+
+output:
+  dir: "./checkpoints/qdap"
+  save_every_epoch: true
+
+seed: 42

@@ -1,0 +1,35 @@
+evaluation:
+  datasets:
+    - mldr
+    - miracl
+  languages: "all"
+  metrics:
+    - ndcg@10
+  top_k: 100
+  compute_oracle: true
+  compute_optimal: true
+
+models:
+  dense_encoder_path: "./checkpoints/dense_encoder/best"
+  qdap_path: "./checkpoints/qdap/best"
+  qdap_type: "L"
+
+bm25:
+  index_dir: "./data/bm25_indices"
+  miracl:
+    k1: 0.9
+    b: 0.4
+  mldr:
+    k1: 1.2
+    b: 0.75
+
+fusion:
+  method: "minmax"  # "minmax" or "rrf"
+  rrf_k: 60
+  pool_size: 100
+
+output:
+  dir: "./results"
+  save_per_query: true
+
+seed: 42

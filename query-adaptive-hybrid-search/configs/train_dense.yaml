@@ -1,0 +1,41 @@
+model:
+  name: "Alibaba-NLP/gte-multilingual-base"
+  embedding_dim: 768
+  use_flash_attention: true
+
+training:
+  epochs: 3
+  batch_size: 32
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  temperature: 0.05
+  max_seq_length: 512
+  gradient_accumulation_steps: 4
+  fp16: true
+
+negatives:
+  type: "antagonist"
+  num_negatives: 7
+  use_in_batch: true
+  threshold_sigma: 0.5
+
+data:
+  datasets:
+    - mldr
+    - miracl
+  languages: "all"
+  cache_dir: "./data/cache"
+  negatives_dir: "./data/negatives"
+
+logging:
+  use_wandb: false
+  project: "query-adaptive-hybrid-search"
+  log_every: 100
+
+output:
+  dir: "./checkpoints/dense_encoder"
+  save_every_epoch: true
+
+seed: 42
+num_seeds: 10
